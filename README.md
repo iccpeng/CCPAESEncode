@@ -68,7 +68,7 @@ dict[@"HELLO"] = @"WORLD";
     
 dict[@"GIT"] = @"HUB";
     
-dict[@"https"] = @"https://github.com/IMCCP";
+dict[@"https"] = @"github.com/IMCCP";
 
  NSString *AESString  = [CCPAESTool inputDictionary:self.dict andSecretKey:secrectKey];
     
