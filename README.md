@@ -22,14 +22,18 @@
  
  在这里感谢这些 blog 的作者,让我在开发过程中少走了很多弯路:
  
- （http://www.open-open.com/lib/view/open1453530956573.html）
-     
- （http://blog.csdn.net/huangwenkui1990/article/details/48292865）
-     
- （http://blog.csdn.net/j_akill/article/details/44079597）
-     
- （https://wordpress-xiaominfc.rhcloud.com/?p=22#comment-12）
-     
- （http://www.360doc.com/content/15/1012/10/20918780_505049436.shtml）
+ [http://www.open-open.com/lib/view/open1453530956573.html](http://www.open-open.com/lib/view/open1453530956573.html)
+ 
+ [http://blog.csdn.net/huangwenkui1990/article/details/48292865](http://blog.csdn.net/huangwenkui1990/article/details/48292865)
+ 
+ [http://blog.csdn.net/j_akill/article/details/44079597](http://blog.csdn.net/j_akill/article/details/44079597)
+ 
+ [https://wordpress-xiaominfc.rhcloud.com/?p=22#comment-12](https://wordpress-xiaominfc.rhcloud.com/?p=22#comment-12)
+ 
+ [http://www.360doc.com/content/15/1012/10/20918780_505049436.shtml](http://www.360doc.com/content/15/1012/10/20918780_505049436.shtml)
+ 
+
+
+ 
  
  
