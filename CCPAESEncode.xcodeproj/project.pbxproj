@@ -18,6 +18,7 @@
 		21372DEC1D7FDE410092D9E3 /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 21372DE91D7FDE410092D9E3 /* GTMBase64.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		21372DED1D7FDE410092D9E3 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 21372DEB1D7FDE410092D9E3 /* README.md */; };
 		21372DF41D7FE8890092D9E3 /* CCPAESTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 21372DF31D7FE8890092D9E3 /* CCPAESTool.m */; };
+		21372DF61D8003BA0092D9E3 /* AES.gif in Resources */ = {isa = PBXBuildFile; fileRef = 21372DF51D8003BA0092D9E3 /* AES.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		21372DEB1D7FDE410092D9E3 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		21372DF21D7FE8890092D9E3 /* CCPAESTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCPAESTool.h; sourceTree = "<group>"; };
 		21372DF31D7FE8890092D9E3 /* CCPAESTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCPAESTool.m; sourceTree = "<group>"; };
+		21372DF51D8003BA0092D9E3 /* AES.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = AES.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 		21372DAF1D7FDDC00092D9E3 /* CCPAESEncode */ = {
 			isa = PBXGroup;
 			children = (
+				21372DF51D8003BA0092D9E3 /* AES.gif */,
 				21372DE71D7FDE410092D9E3 /* GTMBase64 */,
 				21372DE31D7FDE300092D9E3 /* AESTool */,
 				21372DB31D7FDDC00092D9E3 /* AppDelegate.h */,
@@ -274,6 +277,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21372DF61D8003BA0092D9E3 /* AES.gif in Resources */,
 				21372DC01D7FDDC00092D9E3 /* LaunchScreen.storyboard in Resources */,
 				21372DBD1D7FDDC00092D9E3 /* Assets.xcassets in Resources */,
 				21372DBB1D7FDDC00092D9E3 /* Main.storyboard in Resources */,
@@ -530,6 +534,7 @@
 				21372DDC1D7FDDC00092D9E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		21372DDD1D7FDDC00092D9E3 /* Build configuration list for PBXNativeTarget "CCPAESEncodeTests" */ = {
 			isa = XCConfigurationList;
@@ -538,6 +543,7 @@
 				21372DDF1D7FDDC00092D9E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		21372DE01D7FDDC00092D9E3 /* Build configuration list for PBXNativeTarget "CCPAESEncodeUITests" */ = {
 			isa = XCConfigurationList;
@@ -546,6 +552,7 @@
 				21372DE21D7FDDC00092D9E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

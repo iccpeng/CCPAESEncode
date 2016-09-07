@@ -79,7 +79,7 @@
      也希望能给个 star 鼓励一下，如果在使用中您有任何问题，可以在 github issue,我会尽自己能力给您答复 。
      
      */
-    
+
     self.dict = [NSMutableDictionary dictionary];
     self.dict[@"HELLO"] = @"WORLD";
     self.dict[@"GIT"] = @"HUB";
