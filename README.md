@@ -4,7 +4,7 @@
 
 ## DEMO GIF
 
-![Image text](https://github.com/IMCCP/CCPCountdownDemo/blob/master/CCPCountdownDemo/ccpbutton.gif)
+![Image text](https://github.com/IMCCP/CCPAESEncode/blob/master/CCPAESEncode/AES.gif)
 
 ## DEMO 简介
 
