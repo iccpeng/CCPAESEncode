@@ -2,6 +2,10 @@
 
 一行代码完成AES加密，加密模式 AES128 + CBC + NoPadding
 
+## DEMO GIF
+
+![Image text](https://github.com/IMCCP/CCPCountdownDemo/blob/master/CCPCountdownDemo/ccpbutton.gif)
+
 ## DEMO 简介
 
 最近项目中用到AES加密，在这里整理成篇，供大家参考阅读，在使用该demo过程中，你可能会遇到一些问题，首先你需要看一下下面的demo简
