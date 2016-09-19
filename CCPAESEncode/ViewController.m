@@ -59,7 +59,7 @@
      http://www.360doc.com/content/15/1012/10/20918780_505049436.shtml
      
      公司后台为PHP,移动端有iOS与Android, 通过讨论我们选择AES的加密模式为
-     AES128 + CBC + NoPadding (注意是否满足你的加密需求)。
+     AES128 + ECB + NoPadding (注意是否满足你的加密需求)。
      
      为什么选择这种加密模式:
      因为AES的加密规则 --> 原输入数据不够16字节的整数位时，就要补齐。因此就会有padding(填充模式)，若使用不同的padding，那么加密出来的结果也会不一样。
@@ -67,7 +67,7 @@
      在解码后需要把末端多余的字符去掉，比较棘手。
      如果不管补齐多少位，末端都是'\0',去掉的话比较容易操作。
      
-     最主要的是能够使得 iOS/Android/PHP 能够通信，也是加密过程中最难搞的地方，尤其需要开发者注意。（注意：别的加密模式也可以完成三者之间的通信，只是查找方法的时候 AES128 + CBC + NoPadding 这种加密方式使用的比较多，希望能有更好用的加密方式）
+     最主要的是能够使得 iOS/Android/PHP 能够通信，也是加密过程中最难搞的地方，尤其需要开发者注意。（注意：别的加密模式也可以完成三者之间的通信，只是查找方法的时候 AES128 + ECB + NoPadding 这种加密方式使用的比较多，希望能有更好用的加密方式）
      
      项目中用到了 google 的 base64 加解密库 GTMBase64，但是这个库已经有很多年没有更新 还是 MRC 开发模式，需要手动配置一下：
      
@@ -98,7 +98,7 @@
 - (IBAction)clickDecodeBtn:(UIButton *)sender {
     
     //上面加密的结果
-    NSString *AESString = @"yNgE5k1LAo7jfWk4oLqQv5YHxhBSOG0g6SjdFJoatZ2oTDL+jv1TpL7KWVcbMTH85kQCEFX9KWbsgegrwZ3JgrQ99I70FdLKjSieKe7rfTz1qmbL9gBoe8GJz3TeqmIs7252agKLSDofW8J3mK8y1F4Y3tdnMGsWO9DZLhS/1v0=";
+    NSString *AESString = @"yNgE5k1LAo7jfWk4oLqQv2uuzOcnC+qKZC0d/69BcPy0NjpSARLfyziuoOe34ZIaVPo7V6Duz7w/SE2Y9jXVIIWbqJoMCWjnTTdnB9n/omo0ZZd7wlVeg8/Qq6nUdiLg7SAM7a5ulatguSWh/S1E+Ni1mEjHZwyUsptU0jeeLno=";
     //解密
     NSDictionary *dict = [CCPAESTool inputBase64String:AESString andSecretKey:secrectKey];
     
