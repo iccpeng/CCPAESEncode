@@ -1,6 +1,6 @@
 # CCPAESEncode
 
-一行代码完成AES加密，加密模式 AES128 + CBC + NoPadding
+一行代码完成AES加密，加密模式 AES128 + ECB + NoPadding
 
 ## DEMO GIF
 
@@ -36,7 +36,7 @@
  
  [http://www.360doc.com/content/15/1012/10/20918780_505049436.shtml](http://www.360doc.com/content/15/1012/10/20918780_505049436.shtml)
  
-我们公司后台为PHP,移动端有iOS与Android, 讨论后选择AES的加密模式为 AES128 + CBC + NoPadding (注意是否满足你的加密需求)。
+我们公司后台为PHP,移动端有iOS与Android, 讨论后选择AES的加密模式为 AES128 + ECB + NoPadding (注意是否满足你的加密需求)。
      
 为什么选择这种加密模式:
 
@@ -50,7 +50,7 @@
 
 iOS/Android/PHP相互通信，也是加密过程中最难搞的地方，尤其需要开发者注意。
 
-（注意：别的加密模式也可以完成三者之间的通信，只是查找方法的时候 AES128 + CBC + NoPadding 
+（注意：别的加密模式也可以完成三者之间的通信，只是查找方法的时候 AES128 + ECB + NoPadding 
 
 这种加密方式使用的比较多，希望能有更好用的加密方式）
      
