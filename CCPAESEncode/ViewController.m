@@ -77,7 +77,6 @@
      
      项目中遇到的一些坑，在项目中都已经注释出来，写的比较清楚，如果该 demo 帮助了您，
      也希望能给个 star 鼓励一下，如果在使用中您有任何问题，可以在 github issue,我会尽自己能力给您答复 。
-     
      */
 
     self.dict = [NSMutableDictionary dictionary];
