@@ -60,7 +60,7 @@
     memcpy(dataPtr, [data bytes], [data length]);
     for(int i = 0; i < diff; i++)
     {
-        dataPtr[i + dataLength] = 0x0000; ////No padding
+        dataPtr[i + dataLength] = 0x0000; // 注意 No padding
     }
     
     size_t bufferSize = newSize + kCCBlockSizeAES128;
@@ -71,7 +71,7 @@
     
     CCCryptorStatus cryptStatus = CCCrypt(kCCEncrypt,
                                           kCCAlgorithmAES128,
-                                          0x0000,  //No padding this is very important
+                                          kCCOptionECBMode,
                                           keyPtr,
                                           kCCKeySizeAES128,
                                           NULL,//这个参数iv是个固定值，通常直接使用密钥即可。大家一定要注视这个参数，如果安卓、服务端和iOS端不统一，那么加密结果就会不一样，解密可能能解出来，但是解密后在末尾会出现一些\0、\t之类的。（注: 这里使用NULL）
@@ -104,7 +104,7 @@
     size_t numBytesCrypted = 0;
     CCCryptorStatus cryptStatus = CCCrypt(kCCDecrypt,
                                           kCCAlgorithmAES128,
-                                          0x0000,//No padding   this is very important
+                                          kCCOptionECBMode,
                                           keyPtr,
                                           kCCBlockSizeAES128,
                                           NULL,//这个参数iv是个固定值，通常直接使用密钥即可。大家一定要注视这个参数，如果安卓、服务端和iOS端不统一，那么加密结果就会不一样，解密可能能解出来，但是解密后在末尾会出现一些\0、\t之类的。(注:这里使用NULL)
