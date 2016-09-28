@@ -24,7 +24,7 @@
  
  网上对AES的详细介绍已经有很多，在这里不做赘述，如果你需要了解这些知识，度娘，google 去吧.
  ```
- ```
+
  在这里感谢这些 blog 的作者,让我在开发过程中少走了很多弯路:
  
  [http://www.open-open.com/lib/view/open1453530956573.html](http://www.open-open.com/lib/view/open1453530956573.html)
@@ -36,8 +36,8 @@
  [https://wordpress-xiaominfc.rhcloud.com/?p=22#comment-12](https://wordpress-xiaominfc.rhcloud.com/?p=22#comment-12)
  
  [http://www.360doc.com/content/15/1012/10/20918780_505049436.shtml](http://www.360doc.com/content/15/1012/10/20918780_505049436.shtml)
+
  ```
- `
 我们公司后台为PHP,移动端有iOS与Android, 讨论后选择AES的加密模式为 AES128 + ECB + NoPadding (注意是否满足你的加密需求)。
      
 为什么选择这种加密模式:
@@ -61,10 +61,10 @@ iOS/Android/PHP相互通信，也是加密过程中最难搞的地方，尤其�
 1.选择项目中的Targets，选中你所要操作的Target，
 
 2.选Build Phases，在其中Complie Sources中选择需要ARC的文件双击，并在输入框中输入 -fno-objc-arc
-`
+```
 
 ## DEMO 使用示例
-`
+```
 //加密
 
 - (IBAction)clickEncodeBtn:(UIButton *)sender {
@@ -82,8 +82,8 @@ dict[@"https"] = @"github.com/IMCCP";
  self.showLabel.text = AESString;
     
 }
-`
-`
+```
+```
 //解密
 
 - (IBAction)clickDecodeBtn:(UIButton *)sender {
@@ -102,7 +102,7 @@ dict[@"https"] = @"github.com/IMCCP";
     self.showLabel.text = jsonString;
     
 }
-`
+```
      
 项目中遇到的一些坑，在 DEMO 中都已经注释出来，写的比较清楚，如果该 DEMO 帮助了您，也希望能给个 star
 
